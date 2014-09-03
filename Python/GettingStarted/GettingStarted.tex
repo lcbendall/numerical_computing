@@ -8,15 +8,15 @@ installed from \url{http://www.python.org/}. Although later versions of
 Python are available, they do not have many of the features needed for scientific computing. 
 
 There are many IDEs (Integrated Development Environments) and text editors freely 
-available. We recommend you use the IPython.
+available. We recommend you use IPython.
 IPython provides three different interfaces: commandline, QTConsole, and Notebook.
 The commandline interface is the simplest of the three.
-It displays code in nice colorized terminal and it very easy to use.
+It displays code in nice colorized terminal and it is very easy to use.
 It can be started by simply running \li{ipython}.
 The QTConsole is an enriched commandline interface.
-It provides some extra features not available in the commandline interface while be just as easy to use.
+It provides some extra features not available in the commandline interface while being just as easy to use.
 You can run the QTConsole interface by executing \li{ipython qtconsole}.
-The Notebook interface provides the most comprehensive list of features and is display via a web browser.
+The Notebook interface provides the most comprehensive list of features and is displayed via a web browser.
 The Notebook interface can be launched by running \li{ipython notebook}.
 This will start the Notebook server and launch a web browser with the interface.
 
@@ -62,7 +62,7 @@ As its name suggests, number data types store numeric values.
 They are immutable data types, meaning that changing the value results in a 
 newly allocated variable.
 There are four different numerical types: \li{int}, \li{long}, 
-\li{float}, and \li{complex}
+\li{float}, and \li{complex}.
 
 \begin{lstlisting}
 # Comments will frequently be provided in this form.
@@ -147,7 +147,7 @@ We can cast other values in Python, like integers and  to strings using the \li{
 \end{example}
 
 \begin{problem}
-Answer the following questions. Use the official Python documentation, if necessary.
+Answer the following questions. Use the official Python documentation if necessary.
 \begin{enumerate}
 \item What does it mean for a string to be an immutable object? 
 \item What happens in \li{my_string[::3]} and \li{my_string[::-1]} provided 
@@ -195,6 +195,8 @@ There are various methods for interacting with lists and some are demonstrated b
 
 # Lists can also be reversed.
 >>> my_list.reverse()
+>>> my_list
+['female', 'Remi', '07/10', 1993, 21]
 
 # List comprehensions provide a powerful way to create lists. 
 >>> [x**2 for x in range(10)]
@@ -206,7 +208,7 @@ The last example, list comprehensions, is very important. Whenever possible, you
 \end{example}
 
 \begin{problem}
-Answer the following questions. Use the official Python documentation, if necessary.
+Answer the following questions. Use the official Python documentation if necessary.
 
 \begin{enumerate}
 \item What is the difference between mutable and immutable objects?
@@ -268,7 +270,7 @@ difference, and symmetric difference.
 \end{example}
 
 \begin{problem}
-Answer the following questions. Use the official Python documentation, if necessary.
+Answer the following questions. Use the official Python documentation if necessary.
 \begin{enumerate}
 \item What are the two ways to create sets? How do you create an empty set?
 \item How would you take the union of sets?
@@ -294,7 +296,7 @@ Dictionaries are another unordered data type.  They are useful for storing key-v
 \end{example}
 
 \begin{problem}
-Answer the following questions. Use the official Python documentation, if necessary.
+Answer the following questions. Use the official Python documentation if necessary.
 \begin{enumerate}
 \item What are the two ways to create dictionaries? How do you create an empty dictionary?
 \item In Example \ref{exp:lists} above we created a list using list comprehension. Create a dictionary using a dictionary comprehension to produce the following output:
