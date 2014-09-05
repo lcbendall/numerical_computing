@@ -1,61 +1,74 @@
 # Problem 1
 '''
-1. Integer Division returns the floor.
-2. Imaginary numbers are written with a suffix of j or J.
+1. Imaginary numbers are written with a suffix of j or J.
 	Complex numbers can be created with the complex(real, imag) function.
 	To extract just the real part use .real
 	To extract just the imaginary part use .imag
-3. float(x) where x is the integer.
-4. //
+2. float(x) where x is the integer.
+3. //
 '''
 
-# problem 2
+# Problem 2
 '''
-1. A string is immutable because its content cannot be changed. 
-2. string[::2] returns every other letter of the string. 
-	string[27:0:-1] returns the string in reverse - without the first character.
-3. The entire string in reverse can be accessed by string[::-1]
+Integer Division returns the floor.
 '''
 
 # problem 3
 '''
+1. A string is immutable because its content cannot be changed. 
+2. my_string[::3] returns every two letters of the string. Io eeAErr!
+   my_string[::-1] returns the string in reverse.
+3. The entire string in reverse can be accessed by my_string[::-1]
+'''
+
+# problem 4
+'''
 1. Mutable objects can be changed in place after creation. 
-The value stored in memory is changed.
-Immutable objects cannot be modified after creation. 
-2.  a[4] = "yoga"
-	a[:] is a copy of the entire list
-	a[:] = [] clears the list (del a[:] is also an option)
-	len(a) returns the list size. 
-	a[0], a[1] = "Peter Pan", "camelbak"
-	a.append("Jonathan, my pet fish")
+   The value stored in memory is changed.
+   Immutable objects cannot be modified after creation. 
+2.  my_list[4] = "yoga"
+	my_list[:] is a copy of the entire list
+	my_list[:] = [] clears the list (del a[:] is also an option)
+	len(my_list) returns the list size. 
+	my_list[0], my_list[1] = "Peter Pan", "camelbak"
+	my_list.append("Jonathan, my pet fish")
 3. 
 my_list = []
-my_list = [i for i in xrange(5)]
+my_list = [i for i in range(5)]
 my_list[3] = float(my_list[3])
 del my_list[2]
 my_list.sort(reverse=True)
 '''
 
-# Problem 4
+# Problem 5
 '''
-1. 
-set() (must be used to create an empty set) and {}
+1. set() (must be used to create an empty set) and {}
 2. 
 union = set.union(setA, setB)
 or union = setA | setB
-3. trick questions! sets don't support indexing, slicing, or any other 
+3. Trick question! sets don't support indexing, slicing, or any other 
 sequence-like behavior. Works because sets are unordered and don't allow duplicates.
 '''
 
-# problem 5
+# problem 6
 '''	
-1. dict() and {} (must be used to create an empty dictionary)
+1. dict() and {} (must be used to create an empty dictionary), {key:value}
 2. sq = {x: x**2 for x in range(2,11,2)}
 3. del(dict[key])
-4. dict.values()
+4. dict.values(), dict.items()
 '''
 
-#problem 6
+# problem 7
+'''
+Adds n into a list (the same list)
+def track(n, a=None):
+    if a = None:
+        a = []
+    a.append(n)
+    return a
+'''
+
+#problem 8
 '''
 1. 	The print statement writes the value of the expression(s) it's given 
 	to the standard output. The return statement allows a function to specify 
