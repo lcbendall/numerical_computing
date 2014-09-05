@@ -16,7 +16,7 @@ Integer Division returns the floor.
 # problem 3
 '''
 1. A string is immutable because its content cannot be changed. 
-2. my_string[::3] returns every two letters of the string. Io eeAErr!
+2. my_string[::3] returns every third letter of the string. Io eeAErr!
    my_string[::-1] returns the string in reverse.
 3. The entire string in reverse can be accessed by my_string[::-1]
 '''
@@ -52,7 +52,7 @@ sequence-like behavior. Works because sets are unordered and don't allow duplica
 
 # problem 6
 '''	
-1. dict() and {} (must be used to create an empty dictionary), {key:value}
+1. dict() and {} (either creates an empty dictionary), {key:value}
 2. sq = {x: x**2 for x in range(2,11,2)}
 3. del(dict[key])
 4. dict.values(), dict.items()
@@ -62,7 +62,7 @@ sequence-like behavior. Works because sets are unordered and don't allow duplica
 '''
 Adds n into a list (the same list)
 def track(n, a=None):
-    if a = None:
+    if a is None:
         a = []
     a.append(n)
     return a
