@@ -42,7 +42,7 @@ my_list.sort(reverse=True)
 
 # Problem 5
 '''
-1. set() (must be used to create an empty set) and {}
+1. set() (must be used to create an empty set) and {} cannot create empty set
 2. 
 union = set.union(setA, setB)
 or union = setA | setB
@@ -75,6 +75,7 @@ def track(n, a=None):
 	a return value to be passed back to the calling function. 
 2. Grocery List cannot have a space. It is also important NOT to call your list "list". 
 Doing so shadows Python's built in list constructor. 
+range argument must be an integer, put len(GroceryList)
 	for loop and if statement require a colon and nested indentation
 	i%2 == 0. Not an assignment. 
 	Grocery List[i]. Needs brackets.
